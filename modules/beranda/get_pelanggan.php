@@ -1,30 +1,30 @@
 <?php
 
-if (isset($_SERVER['HTTP_X_REQUESTED_WITH' ]) && ( $_SERVER[ 'HTTP_X_REQUESTED_WITH' ] == 'XMLHttpRequest' )) {
+ if (isset($_SERVER['HTTP_X_REQUESTED_WITH']) && ( $_SERVER['HTTP_X_REQUESTED_WITH'] == 'XMLHttpRequest' )) { 
 	
-	require_once "../../config/config.php";
+	require_once "../../config/config.php"; 
 
 	$query = "SELECT count(id_pelanggan) as jumlah FROM tbl_pelanggan";
 
-	$stmt = $mysqli->prepare($query);
+	$stmt = $mysqli->prepare($query); 
 
-	if (! $stmt) {
-		die('Query Error: ' . $mysqli->errno. ' - ' . $mysqli->error);
+	if (!$stmt) { 
+		die('Query Error: '.$mysqli->errno.'-'.$mysqli->error); 
 	}
 
-	$stmt->execute();
+	$stmt->execute(); 
 
-	$result = $stmt->get_result();
+	$result = $stmt->get_result(); 
 
-	$data = $result->fetch_assoc();
+	$data = $result->fetch_assoc(); 
 
-	echo number_format($data['jumlah' ]);
+	echo number_format($data['jumlah']); 
+	
+	$stmt->close(); 
 
-	$stmt->close();
-
-	$mysqli->close();
+	$mysqli->close(); 
 
 } else {
-	echo '<script>window.location="../../index.php"</script>' ;
+	echo '<script>window.location="../../index.php"</script>'; 
 }
 ?>
