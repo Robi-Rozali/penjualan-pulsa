@@ -119,6 +119,7 @@ $(document).ready(function(){
 				$('#id_pelanggan').val(result.id_pelanggan); 
 				$('#nama').val(result.nama);  
 				$('#no_hp').val(result.no_hp);
+
 			}
 		});
 	});
