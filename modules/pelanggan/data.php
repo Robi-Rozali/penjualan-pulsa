@@ -9,7 +9,7 @@
 		array( 'db' => 'nama', 'dt' => 2 ),  
 		array( 'db' => 'no_hp', 'dt' => 3 ),
 		array( 'db' => 'id_pelanggan', 'dt' => 4 ) 
-};
+	);
 
 require_once "../../config/database.php";
 require '../../config/ssp.class.php'; 

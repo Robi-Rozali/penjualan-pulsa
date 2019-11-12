@@ -59,7 +59,7 @@
 					</li>
 					<li class="nav-item">
 						<a class="nav-link mr-1 menu" id="penjualan" href="javascript:void(0);"> 
-							<i class="fas fa-shopping-cart title-icon"></i> 
+							<i class="fas fa-shopping-cart title-icon"></i>Penjualan
 						</a>
 					</li>
 					<li class="nav-item">
